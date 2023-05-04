@@ -1,0 +1,21 @@
+.home {
+  height: 100vh;
+  text-align: center;
+  background: rgb(247, 247, 248);
+  &__heading {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Plus Jakarta Sans;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+  &__steps-box {
+    padding-bottom: 50px !important;
+  }
+  &__steps-card {
+    box-shadow: 4px 4px 20px rgba(169, 169, 169, 0.35) !important;
+  }
+  &__steps-card-border {
+    border-radius: 10px !important;
+  }
+}

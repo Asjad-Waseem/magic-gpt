@@ -1,7 +1,19 @@
+import React from "react";
 import "assets/scss/App.scss";
 
-function App() {
-  return <div className="main">asdsadsadsadsa</div>;
-}
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { Routes as MagicGPTRoutes } from "utils/Routes";
+
+import Home from "pages/home";
+
+const App: React.FC = (): JSX.Element => {
+  return (
+    <Router>
+      <Routes>
+        <Route path={MagicGPTRoutes.home} element={<Home />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
